@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo and Video Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffebf0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3rem;
+            margin: 0;
+            color: #ff4081;
+        }
+
+        header .love {
+            color: red;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .item {
+            background-color: #fff;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 200px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .item img, 
+        .item video {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .item p {
+            margin: 10px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .item {
+                max-width: 150px;
+            }
+
+            .item p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Gallery <span class="love">❤️</span></h1>
+    </header>
+    <main>
+        <!-- Images Section -->
+        <div class="gallery">
+            <!-- Replace # with the actual image source -->
+            <!-- Loop through images (85 total) -->
+            <!-- Example for 85 images -->
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.04_9991aeac.jpg" alt="Image Description">
+                <p>Description of Image 1</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.16.39_59b4c893.jpg" alt="Image Description">
+                <p>Description of Image 2</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.06_e47cd6a0.jpg" alt="Image Description">
+                <p>Description of Image 3</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.05_c8b66aa1.jpg" alt="Image Description">
+                <p>Description of Image 4</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.07_626e4caa.jpg" alt="Image Description">
+                <p>Description of Image 5</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.12_553ce12e.jpg" alt="Image Description">
+                <p>Description of Image 6</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.13_ca74f155.jpg" alt="Image Description">
+                <p>Description of Image 7</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.13_b70cd6de.jpg" alt="Image Description">
+                <p>Description of Image 8</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.14_30425539.jpg" alt="Image Description">
+                <p>Description of Image 9</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.14_779734b9.jpg" alt="Image Description">
+                <p>Description of Image 10</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.15_42ea8197.jpg" alt="Image Description">
+                <p>Description of Image 11</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.15_a86ac3bb.jpg" alt="Image Description">
+                <p>Description of Image 12</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.17_de19795f.jpg" alt="Image Description">
+                <p>Description of Image 13</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.18_83c8e6c4.jpg" alt="Image Description">
+                <p>Description of Image 14</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.18_83c8e6c4.jpg" alt="Image Description">
+                <p>Description of Image 15</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.19_3ed49ad5.jpg" alt="Image Description">
+                <p>Description of Image 16</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.19_bc3cbf01.jpg" alt="Image Description">
+                <p>Description of Image 17</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.20_907af518.jpg" alt="Image Description">
+                <p>Description of Image 18</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.20_cd9ae0ff.jpg" alt="Image Description">
+                <p>Description of Image 19</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.22_578ded3f.jpg" alt="Image Description">
+                <p>Description of Image 20</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.22_4dcd9333.jpg" alt="Image Description">
+                <p>Description of Image 21</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.23_3f39b3ca.jpg" alt="Image Description">
+                <p>Description of Image 22</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-26 at 00.12.58_9493bb42.jpg" alt="Image Description">
+                <p>Description of Image 23</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.18.27_21b43b8a.jpg" alt="Image Description">
+                <p>Description of Image 24</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.34.47_36866463.jpg" alt="Image Description">
+                <p>Description of Image 25</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.34.50_7c8a9ddd.jpg" alt="Image Description">
+                <p>Description of Image 26</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.34.50_591702a4.jpg" alt="Image Description">
+                <p>Description of Image 27</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.34.45_fcb89ec7.jpg" alt="Image Description">
+                <p>Description of Image 28</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.34.48_cce91aad.jpg" alt="Image Description">
+                <p>Description of Image 29</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.34.49_9f2f90b6.jpg" alt="Image Description">
+                <p>Description of Image 30</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.34.50_57636e1d.jpg" alt="Image Description">
+                <p>Description of Image 31</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.35.26_7bbe3ca7.jpg" alt="Image Description">
+                <p>Description of Image 32</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.23_62eb6d04.jpg" alt="Image Description">
+                <p>Description of Image 33</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.34.51_4fc78f50.jpg" alt="Image Description">
+                <p>Description of Image 34</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.24_cc7da49f.jpg" alt="Image Description">
+                <p>Description of Image 35</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.24_8b61ffc8.jpg" alt="Image Description">
+                <p>Description of Image 36</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.24_c1c7b309.jpg" alt="Image Description">
+                <p>Description of Image 37</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.25_b7b81b5d.jpg" alt="Image Description">
+                <p>Description of Image 38</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.25_703aab91.jpg" alt="Image Description">
+                <p>Description of Image 39</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.25_de9a48e8.jpg" alt="Image Description">
+                <p>Description of Image 40</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.29_fe623830.jpg" alt="Image Description">
+                <p>Description of Image 41</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.30_26cf3626.jpg" alt="Image Description">
+                <p>Description of Image 42</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.30_0dd00158.jpg" alt="Image Description">
+                <p>Description of Image 43</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.34.48_ab5aee0b.jpg" alt="Image Description">
+                <p>Description of Image 44</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.34.49_19284b48.jpg" alt="Image Description">
+                <p>Description of Image 45</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.34.49_3f265696.jpg" alt="Image Description">
+                <p>Description of Image 46</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.34_7444b93e.jpg" alt="Image Description">
+                <p>Description of Image 47</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.34_00c7cba1.jpg" alt="Image Description">
+                <p>Description of Image 48</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.32_1e4d4044.jpg" alt="Image Description">
+                <p>Description of Image 49</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.30_8b22b40e.jpg" alt="Image Description">
+                <p>Description of Image 50</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.30_94547c1b.jpg" alt="Image Description">
+                <p>Description of Image 51</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.31_9b56c629.jpg" alt="Image Description">
+                <p>Description of Image 52</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.31_17376135.jpg" alt="Image Description">
+                <p>Description of Image 53</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.31_953928bc.jpg" alt="Image Description">
+                <p>Description of Image 54</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.31_6104d49d.jpg" alt="Image Description">
+                <p>Description of Image 55</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.32_7a86ae79.jpg" alt="Image Description">
+                <p>Description of Image 56</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.32_3bbb1293.jpg" alt="Image Description">
+                <p>Description of Image 57</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.33_d8f460c6.jpg" alt="Image Description">
+                <p>Description of Image 58</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.33_2310d9a9.jpg" alt="Image Description">
+                <p>Description of Image 59</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.33_3e6576e8.jpg" alt="Image Description">
+                <p>Description of Image 60</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.34_203dbf24.jpg" alt="Image Description">
+                <p>Description of Image 61</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.34_16a858cf.jpg" alt="Image Description">
+                <p>Description of Image 62</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.33_da3bf423.jpg" alt="Image Description">
+                <p>Description of Image 63</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.29_cb1238ad.jpg" alt="Image Description">
+                <p>Description of Image 64</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.27_73a8b331.jpg" alt="Image Description">
+                <p>Description of Image 65</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.27_6cf7cf94.jpg" alt="Image Description">
+                <p>Description of Image 66</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.26_89aa5f8e.jpg" alt="Image Description">
+                <p>Description of Image 67</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.26_359b76a9.jpg" alt="Image Description">
+                <p>Description of Image 68</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.26_d1afb0fd.jpg" alt="Image Description">
+                <p>Description of Image 69</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.32_7a86ae79.jpg" alt="Image Description">
+                <p>Description of Image 70</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.26_ea2db096.jpg" alt="Image Description">
+                <p>Description of Image 71</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.34.47_06bcfd9d.jpg" alt="Image Description">
+                <p>Description of Image 72</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-24 at 02.00.09_4dca5ac3.jpg" alt="Image Description">
+                <p>Description of Image 73</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.21_3542b0f2.jpg" alt="Image Description">
+                <p>Description of Image 74</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.35_5fd65f7a.jpg" alt="Image Description">
+                <p>Description of Image 75</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.35_6303288b.jpg" alt="Image Description">
+                <p>Description of Image 76</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.35_ad778ad2.jpg" alt="Image Description">
+                <p>Description of Image 77</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.34.48_fcc057fe.jpg" alt="Image Description">
+                <p>Description of Image 78</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.24.36_58d7fbd0.jpg" alt="Image Description">
+                <p>Description of Image 79</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.34.52_a80d2208 - Copy.jpg" alt="Image Description">
+                <p>Description of Image 80</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.34.46_fdbfe33d.jpg" alt="Image Description">
+                <p>Description of Image 81</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-25 at 23.34.46_9609907c.jpg" alt="Image Description">
+                <p>Description of Image 82</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-23 at 21.08.38_30bd0aed.jpg" alt="Image Description">
+                <p>Description of Image 83</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-26 at 01.12.38_0e0ff58b.jpg" alt="Image Description">
+                <p>Description of Image 84</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-24 at 23.05.49_c2b2f0a1.jpg" alt="Image Description">
+                <p>Description of Image 85</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-26 at 01.19.31_9bddc41a.jpg" alt="Image Description">
+                <p>Description of Image 86</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-26 at 01.19.31_f9ff9069.jpg" alt="Image Description">
+                <p>Description of Image 87</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-26 at 01.19.32_1a12736e.jpg" alt="Image Description">
+                <p>Description of Image 88</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-26 at 01.19.32_756eb751.jpg" alt="Image Description">
+                <p>Description of Image 89</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-26 at 01.19.32_13712ed9.jpg" alt="Image Description">
+                <p>Description of Image 90</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-26 at 01.19.33_8641459c.jpg" alt="Image Description">
+                <p>Description of Image 91</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-26 at 01.19.34_2552a5a1.jpg" alt="Image Description">
+                <p>Description of Image 92</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-26 at 01.19.34_11f557f4.jpg" alt="Image Description">
+                <p>Description of Image 93</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-26 at 01.41.03_18cf71a0.jpg" alt="Image Description">
+                <p>Description of Image 94</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-26 at 02.04.24_6ff9178a.jpg" alt="Image Description">
+                <p>Description of Image 95</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-26 at 02.14.14_6f77faf1.jpg" alt="Image Description">
+                <p>Description of Image 96</p>
+            </div>
+            <div class="item">
+                <img src="image/WhatsApp Image 2024-12-26 at 02.14.14_7c752e9f.jpg" alt="Image Description">
+                <p>Description of Image 97</p>
+            </div>
+            <!-- Repeat for other images -->
+
+            <!-- Videos Section -->
+            <!-- Replace # with the actual video source -->
+            <!-- Example for 7 videos -->
+            <div class="item">
+                <video controls>
+                    <source src="image/WhatsApp Video 2024-12-25 at 23.18.26_c5c868e7.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Description of Video 1</p>
+            </div>
+            <div class="item">
+                <video controls>
+                    <source src="image/WhatsApp Video 2024-12-25 at 23.16.53_4039817e.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Description of Video 2</p>
+            </div>
+            <div class="item">
+                <video controls>
+                    <source src="image/WhatsApp Video 2024-12-26 at 01.19.33_c1ef222f.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Description of Video 3</p>
+            </div>
+            <div class="item">
+                <video controls>
+                    <source src="image/WhatsApp Video 2024-12-25 at 23.34.51_0e0944be.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Description of Video 4</p>
+            </div>
+            <div class="item">
+                <video controls>
+                    <source src="image/WhatsApp Video 2024-12-25 at 23.18.32_8a3d65fa.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Description of Video 5</p>
+            </div>
+            <div class="item">
+                <video controls>
+                    <source src="image/WhatsApp Video 2024-12-25 at 23.35.26_f131f374.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Description of Video 6</p>
+            </div>
+            <div class="item">
+                <video controls>
+                    <source src="image/WhatsApp Video 2024-12-26 at 02.04.23_270dd509.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Description of Video 7</p>
+            </div>
+            <div class="item">
+                <video controls>
+                    <source src="image/WhatsApp Video 2024-12-26 at 02.14.13_52a00c8a.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Description of Video 8</p>
+            </div>
+            <div class="item">
+                <video controls>
+                    <source src="image/WhatsApp Video 2024-12-26 at 02.04.24_d422f83b.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Description of Video 9</p>
+            </div>
+            <div class="item">
+                <video controls>
+                    <source src="image/WhatsApp Video 2024-12-26 at 02.14.03_21d765a3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Description of Video 10</p>
+            </div>
+            <div class="item">
+                <video controls>
+                    <source src="image/WhatsApp Video 2024-12-26 at 02.22.25_751dfd28.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Description of Video 11</p>
+            </div>
+            <div class="item">
+                <video controls>
+                    <source src="image/WhatsApp Video 2024-12-26 at 01.19.31_9c9b994d.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Description of Video 12</p>
+            </div>
+            <div class="item">
+                <video controls>
+                    <source src="image/WhatsApp Video 2024-12-26 at 01.19.21_4844e571.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Description of Video 13</p>
+            </div>
+            <div class="item">
+                <video controls>
+                    <source src="image/WhatsApp Video 2024-12-26 at 01.19.30_abe1999d.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Description of Video 14</p>
+            </div>
+            <div class="item">
+                <video controls>
+                    <source src="image/WhatsApp Video 2024-12-26 at 02.31.36_04f1874c.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Description of Video 15</p>
+            </div>
+            <div class="item">
+                <video controls>
+                    <source src="image/WhatsApp Video 2024-12-26 at 02.31.42_e2b6e5e4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Description of Video 16</p>
+            </div>
+            <!-- Repeat for other videos -->
+        </div>
+    </main>
+</body>
+</html>
